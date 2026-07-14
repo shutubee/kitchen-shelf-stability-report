@@ -14,7 +14,7 @@ from solver import (
 )
 from degradation import combined_degradation_factor
 from risk import compute_risk_breakdown, aggregate_member_risks
-from validation import validate_member, confidence_score
+from validation import validate_geometry, confidence_score
 from report import build_report_markdown, results_to_csv_bytes
 from export import export_project_json, import_project_json
 from plotting import (
