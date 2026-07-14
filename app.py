@@ -3,25 +3,25 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 
-from src.config import *
-from src.materials import MATERIALS
-from src.sections import build_section
-from src.geometry import m_per_pixel_from_reference, member_length_m
-from src.solver import (
+from config import *
+from materials import MATERIALS
+from sections import build_section
+from geometry import m_per_pixel_from_reference, member_length_m
+from solver import (
     slenderness, euler_critical_load, euler_critical_stress,
     johnson_critical_stress, combined_stress, imperfection_knockdown,
     lambda_critical, recommend_regime,
 )
-from src.degradation import combined_degradation_factor
-from src.risk import compute_risk_breakdown, aggregate_member_risks
-from src.validation import validate_member, confidence_score
-from src.report import build_report_markdown, results_to_csv_bytes
-from src.export import export_project_json, import_project_json
-from src.plotting import (
+from degradation import combined_degradation_factor
+from risk import compute_risk_breakdown, aggregate_member_risks
+from validation import validate_member, confidence_score
+from report import build_report_markdown, results_to_csv_bytes
+from export import export_project_json, import_project_json
+from plotting import (
     overlay_members_on_image, make_stress_slenderness_plot,
     make_capacity_plot, make_risk_bar_plot,
 )
-from src.sample_data import DEFAULT_MEMBERS
+from sample_data import DEFAULT_MEMBERS
 
 try:
     from src.vision import detect_shelf_members, draw_detected_lines, convert_detected_lines_to_members
