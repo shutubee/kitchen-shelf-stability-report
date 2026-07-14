@@ -10,7 +10,6 @@ matplotlib
 scipy
 sympy
 plotly
-opencv
 Pillow
 openpyxl
 xlsxwriter
