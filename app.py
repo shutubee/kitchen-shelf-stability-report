@@ -24,7 +24,7 @@ from plotting import (
 from sample_data import DEFAULT_MEMBERS
 
 try:
-    from src.vision import detect_shelf_members, draw_detected_lines, convert_detected_lines_to_members
+    from vision import detect_shelf_members, draw_detected_lines, convert_detected_lines_to_members
     VISION_AVAILABLE = True
 except Exception:
     VISION_AVAILABLE = False
