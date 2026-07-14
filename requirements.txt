@@ -12,6 +12,7 @@ sympy
 plotly
 Pillow
 openpyxl
+opencv-python
 xlsxwriter
 reportlab
 python-docx
