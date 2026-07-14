@@ -196,7 +196,7 @@ with tabs[3]:
                 corrosion_level=corrosion, moisture_level=moisture,
                 looseness_level=looseness, confidence_score=conf["score"],
             )
-            messages = validate_geometry(L_m, section, E_Pa, sigma_y_Pa, lam, utilization, imperf_mm)
+            messages = validate_member(L_m, section, E_Pa, sigma_y_Pa, lam, utilization, imperf_mm)
             all_messages.extend([{**m, "member_id": member["id"]} for m in messages])
 
             records.append({
