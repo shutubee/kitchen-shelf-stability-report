@@ -1,0 +1,17 @@
+streamlit>=1.39.0
+numpy>=2.0.0
+pandas>=2.2.0
+matplotlib>=3.9.0
+pillow>=10.0.0
+streamlit
+numpy
+pandas
+matplotlib
+scipy
+sympy
+plotly
+Pillow
+openpyxl
+xlsxwriter
+reportlab
+python-docx
